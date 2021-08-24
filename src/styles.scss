@@ -1,7 +1,16 @@
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  &::selection {
+    background-color: rgba(61, 61, 252, 0.2);
+  }
+}
+
+html {
+  font-size: 18px;
 }
 
 .container {

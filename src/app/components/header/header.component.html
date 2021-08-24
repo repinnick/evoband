@@ -1,5 +1,49 @@
 <nav class="nav">
   <div class="container">
-    <img src="assets/images/icons/evoband-logo.svg" alt="evoband logo" class="nav__logo">
+    <div class="nav__wrapper">
+      <img src="assets/images/icons/evoband-logo.svg" alt="evoband logo" class="nav__logo">
+      <button class="hamburger hamburger--elastic"
+              type="button"
+              aria-label="Menu"
+              aria-controls="navigation"
+              aria-expanded="true"
+              appHamburgerToggle
+              *ngIf="isBurgerMenu"
+      >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+      </button>
+
+      <ul class="nav__links">
+        <li class="nav__link">
+          <a class="nav__route" href="">Главная</a>
+        </li>
+        <li class="nav__link">
+          <a class="nav__route" href="">О группе</a>
+        </li>
+        <li class="nav__link">
+          <a class="nav__route" href="">Синглы</a>
+        </li>
+        <li class="nav__link">
+          <a class="nav__route" href="">Альбомы</a>
+        </li>
+        <li class="nav__link">
+          <a class="nav__route" href="">Фото</a>
+        </li>
+        <li class="nav__link">
+          <a class="nav__route" href="">Видео</a>
+        </li>
+        <li class="nav__link">
+          <a class="nav__route" href="">Концерты</a>
+        </li>
+        <li class="nav__link">
+          <a class="nav__route" href="">Контакты</a>
+        </li>
+        <li class="nav__link">
+          <button class="nav__route nav__button">Поддержать группу</button>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

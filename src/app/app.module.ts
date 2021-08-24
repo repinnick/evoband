@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { GalaxyComponent } from './components/galaxy/galaxy.component';
+import { HamburgerToggleDirective } from './directives/hamburger-toggle.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    GalaxyComponent
+    GalaxyComponent,
+    HamburgerToggleDirective
   ],
   imports: [
     BrowserModule,
