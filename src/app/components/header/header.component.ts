@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +8,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit{
   isBurgerMenu = false;
   isActive = false;
+
+  @HostListener('click')
+  toggleActive(): void {
+    this.isActive = !this.isActive;
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any): void {
