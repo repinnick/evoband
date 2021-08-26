@@ -1,7 +1,22 @@
 @import "../../../assets/styles/vars";
 
 .home {
+
   &__wrapper {
     padding: 100px $wrapper-padding-lr;
+  }
+
+  &__about-image {
+    width: 400px;
+  }
+}
+
+.about {
+  //background-color: #0e0126;
+  &__wrapper {
+    padding: 100px $wrapper-padding-lr 0;
+  }
+  &__image {
+    width: 400px;
   }
 }
