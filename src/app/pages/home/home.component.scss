@@ -1,0 +1,7 @@
+@import "../../../assets/styles/vars";
+
+.home {
+  &__wrapper {
+    padding: 100px $wrapper-padding-lr;
+  }
+}
