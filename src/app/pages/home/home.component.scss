@@ -1,7 +1,13 @@
 @import "../../../assets/styles/vars";
 
-.home {
 
+.background {
+  background: url("../../../assets/images/img/home/header.jpg") no-repeat 50%;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home {
   &__wrapper {
     padding: 100px $wrapper-padding-lr;
   }
@@ -14,7 +20,7 @@
 .about {
   //background-color: #0e0126;
   &__wrapper {
-    padding: 100px $wrapper-padding-lr 0;
+    padding: 100px $wrapper-padding-lr;
   }
   &__image {
     width: 400px;

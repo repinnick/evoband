@@ -1,9 +1,10 @@
 @import "../../../assets/styles/vars";
 
 .nav {
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 3px 0 #cccccc;
+  background: rgba(255, 255, 255, 0);
   width: 100%;
+  z-index: 10;
+  position: fixed;
 
   &__wrapper {
     padding: 10px $wrapper-padding-lr;
@@ -14,7 +15,9 @@
   }
 
   &__logo {
+    //background-image: url("../../../assets/images/icons/evoband-logo-black.svg");
     width: 115px;
+    //height: 58px;
     pointer-events: none;
   }
 
@@ -36,19 +39,22 @@
     outline: none;
     text-decoration: none;
     font-weight: 600;
-    color: #000000;
+    //color: #000000;
+    color: #ffffff;
     font-size: 1rem;
     transition: font-size 0.2s ease-in-out;
   }
 
   &__button {
     outline: none;
-    border-radius: 20px;
-    background: transparent;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: #2ca3de;
     cursor: pointer;
     font-family: Jura, sans-serif;
     padding: 4px 10px;
-    border: 1px solid #1f1e1e;
+    //border: 1px solid #1f1e1e;
   }
 }
 
