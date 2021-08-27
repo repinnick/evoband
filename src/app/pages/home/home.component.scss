@@ -1,5 +1,15 @@
 @import "../../../assets/styles/vars";
 
+
+.background {
+  background: url("../../../assets/images/img/home/header2.jpg") no-repeat 50%;
+  opacity: 0.99;
+  background-size: cover;
+  min-height: 100vh;
+  //backdrop-filter: blur(4px);
+  //filter: blur(1.5px);
+}
+
 .home {
 
   &__wrapper {
