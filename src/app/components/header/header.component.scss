@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Jura, sans-serif;
+    font-family: 'Exo 2', sans-serif;
   }
 
   &__logo {
@@ -38,10 +38,9 @@
   &__route {
     outline: none;
     text-decoration: none;
-    font-weight: 600;
-    //color: #000000;
+    font-weight: 400;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.05rem;
     transition: font-size 0.2s ease-in-out;
   }
 
@@ -52,9 +51,9 @@
     text-transform: uppercase;
     background: #2ca3de;
     cursor: pointer;
-    font-family: Jura, sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
     padding: 4px 10px;
-    //border: 1px solid #1f1e1e;
   }
 }
 
@@ -86,6 +85,12 @@
     }
     &__link {
       padding-bottom: 1.3rem;
+    }
+    &__route {
+      color: #000000;
+    }
+    &__button {
+      color: #ffffff;
     }
   }
 }
