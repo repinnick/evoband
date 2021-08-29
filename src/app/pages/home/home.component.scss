@@ -11,17 +11,45 @@
     padding: 100px $wrapper-padding-lr;
   }
 
-  &__about-image {
-    width: 400px;
-  }
+  //&__about-image {
+  //  width: 400px;
+  //}
 }
 
 .about {
+  font-family: $font-family-exo;
   //background-color: #0e0126;
   &__wrapper {
     padding: 100px $wrapper-padding-lr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__text {
+    margin-bottom: 2rem;
+  }
+  &__title {
+    margin-bottom: 1rem;
+    font-size: $title-size;
+  }
+  &__description {
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+  &__more {
+    background: $button-color;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 10px 35px;
+    text-decoration: none;
+    align-self: flex-start;
   }
   &__image {
-    width: 400px;
+    width: 500px;
+    justify-self: end;
   }
 }

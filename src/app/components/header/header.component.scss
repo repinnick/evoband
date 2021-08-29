@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font-family-exo;
   }
 
   &__logo {
@@ -49,11 +49,11 @@
     border: none;
     border-radius: 4px;
     text-transform: uppercase;
-    background: #2ca3de;
+    background: $button-color;
     cursor: pointer;
-    font-family: 'Exo 2', sans-serif;
+    font-family: $font-family-exo;
     font-weight: 400;
-    padding: 4px 10px;
+    padding: 10px 20px;
   }
 }
 
