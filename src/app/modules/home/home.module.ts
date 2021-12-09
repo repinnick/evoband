@@ -7,10 +7,9 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HomeComponent],
-  exports: [HomeComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ]
 })
 export class HomeModule { }
