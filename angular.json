@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "evoband",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -28,11 +28,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              { "glob": "**/*", "input": "src/assets", "ignore": ["**/*.scss"], "output": "/assets/" }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/assets/styles/app.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/assets/styles"]
+            },
             "scripts": []
           },
           "configurations": {
@@ -96,11 +97,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              { "glob": "**/*", "input": "src/assets", "ignore": ["**/*.scss"], "output": "/assets/" }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/assets/styles/app.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/assets/styles"]
+            },
             "scripts": []
           }
         }

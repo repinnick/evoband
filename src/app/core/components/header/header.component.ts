@@ -1,7 +1,7 @@
-import { Component, HostBinding, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
+  selector: 'evoband-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
