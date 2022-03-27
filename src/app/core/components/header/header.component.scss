@@ -5,6 +5,13 @@
   width: 100%;
   z-index: 10;
   position: fixed;
+  transition: background 0.3s ease-in-out;
+
+  &--scroll {
+    background: #ffffff;
+    //box-shadow: -2px -2px 8px 1px $button-color;
+    box-shadow: 0 2px 0 #ffffff, 3px 1px 9px $button-color;
+  }
 
   &__wrapper {
     padding: 10px $wrapper-padding-lr;
@@ -24,6 +31,10 @@
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     transition: all 0.3s ease-in-out;
+
+    &--scroll {
+      background: url("../../../../assets/images/icons/evoband-logo-black.svg") 50% / cover no-repeat;
+    }
   }
 
   &__logo-image {
@@ -51,6 +62,10 @@
     color: #ffffff;
     font-size: 1.05rem;
     transition: font-size 0.2s ease-in-out;
+
+    &--scroll {
+      color: #000000;
+    }
   }
 
   &__button {
@@ -81,7 +96,6 @@
     &__logo {
       background: url("../../../../assets/images/icons/evoband-logo-black.svg") 50% / cover no-repeat;
       z-index: 10;
-
     }
     &__links {
       position: absolute;

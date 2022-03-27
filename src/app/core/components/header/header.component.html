@@ -1,7 +1,7 @@
-<nav class="nav">
+<nav class="nav" [ngClass]="{ 'nav--scroll': isScrollEvent}">
   <div class="container">
     <div class="nav__wrapper">
-      <a class="nav__logo" routerLink="/"></a>
+      <a class="nav__logo" [ngClass]="{ 'nav__logo--scroll': isScrollEvent }" routerLink="/"></a>
 
       <button class="hamburger hamburger--elastic"
               type="button"
@@ -19,25 +19,25 @@
 
       <ul class="nav__links" [ngClass]="{ 'nav__links--active': (isBurgerMenu && isActive) || !isBurgerMenu }">
         <li class="nav__link">
-          <a class="nav__route" routerLink="/">Главная</a>
+          <a class="nav__route" [ngClass]="{ 'nav__route--scroll': isScrollEvent }" routerLink="/">Главная</a>
         </li>
         <li class="nav__link">
-          <a class="nav__route" href="">Синглы</a>
+          <a class="nav__route" [ngClass]="{ 'nav__route--scroll': isScrollEvent }" href="">Синглы</a>
         </li>
         <li class="nav__link">
-          <a class="nav__route" href="">Альбомы</a>
+          <a class="nav__route" [ngClass]="{ 'nav__route--scroll': isScrollEvent }" href="">Альбомы</a>
         </li>
         <li class="nav__link">
-          <a class="nav__route" href="">Фото</a>
+          <a class="nav__route" [ngClass]="{ 'nav__route--scroll': isScrollEvent }" href="">Фото</a>
         </li>
         <li class="nav__link">
-          <a class="nav__route" href="">Видео</a>
+          <a class="nav__route" [ngClass]="{ 'nav__route--scroll': isScrollEvent }" href="">Видео</a>
         </li>
         <li class="nav__link">
-          <a class="nav__route" href="">Концерты</a>
+          <a class="nav__route" [ngClass]="{ 'nav__route--scroll': isScrollEvent }" href="">Концерты</a>
         </li>
         <li class="nav__link">
-          <a class="nav__route" href="">Контакты</a>
+          <a class="nav__route" [ngClass]="{ 'nav__route--scroll': isScrollEvent }" href="">Контакты</a>
         </li>
         <li class="nav__link">
           <button class="nav__route nav__button">Поддержать группу</button>
