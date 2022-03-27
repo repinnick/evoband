@@ -6,20 +6,19 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
-  isBurgerMenu = false;
-  isActive = false;
-
-  @HostListener('click')
-  toggleActive(): void {
-    this.isActive = !this.isActive;
-  }
+  public isBurgerMenu = false;
+  public isActive = false;
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: any): void {
+  private onResize(event: any): void {
     this.isBurgerMenu = event.target.innerWidth <= 860;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.isBurgerMenu = window.innerWidth <= 860;
+  }
+
+  public toggleActive(): void {
+    this.isActive = !this.isActive;
   }
 }

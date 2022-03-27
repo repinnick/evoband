@@ -18,3 +18,9 @@ html {
   width: 100%;
   margin: 0 auto;
 }
+
+@media (max-width: 860px) {
+  body {
+    overflow: hidden;
+  }
+}

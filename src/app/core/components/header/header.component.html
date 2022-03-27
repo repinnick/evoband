@@ -1,13 +1,14 @@
 <nav class="nav">
   <div class="container">
     <div class="nav__wrapper">
-<!--      <div class="nav__logo"></div>-->
-      <img src="assets/images/icons/evoband-logo-white.svg" alt="evoband logo" class="nav__logo">
+      <a class="nav__logo" routerLink="/"></a>
+
       <button class="hamburger hamburger--elastic"
               type="button"
               aria-label="Menu"
               aria-controls="navigation"
               aria-expanded="true"
+              (click)="toggleActive()"
               [class.is-active]="isActive"
               *ngIf="isBurgerMenu"
       >
@@ -16,7 +17,7 @@
               </span>
       </button>
 
-      <ul class="nav__links" *ngIf="(isBurgerMenu && isActive) || !isBurgerMenu">
+      <ul class="nav__links" [ngClass]="{ 'nav__links--active': (isBurgerMenu && isActive) || !isBurgerMenu }">
         <li class="nav__link">
           <a class="nav__route" routerLink="/">Главная</a>
         </li>
