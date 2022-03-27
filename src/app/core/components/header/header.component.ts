@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, OnInit, Renderer2, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'evoband-header',
@@ -21,11 +21,23 @@ export class HeaderComponent implements OnInit{
     this.isScrollEvent = window.innerHeight < window.pageYOffset + 78;
   }
 
+  constructor(private renderer: Renderer2) {
+  }
+
   ngOnInit(): void {
     this.isBurgerMenu = window.innerWidth <= 860;
   }
 
   public toggleActive(): void {
     this.isActive = !this.isActive;
+    if (this.isActive) {
+      this.renderer.addClass(document.body, 'no-scroll');
+      this.renderer.addClass(document.documentElement, 'no-scroll');
+    }
+    else {
+      this.renderer.removeClass(document.body, 'no-scroll');
+      this.renderer.removeClass(document.documentElement, 'no-scroll');
+    }
+
   }
 }

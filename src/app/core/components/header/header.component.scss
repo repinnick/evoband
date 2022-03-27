@@ -9,8 +9,7 @@
 
   &--scroll {
     background: #ffffff;
-    //box-shadow: -2px -2px 8px 1px $button-color;
-    box-shadow: 0 2px 0 #ffffff, 3px 1px 9px $button-color;
+    box-shadow: -1px -14px 0 #ffffff, 3px 1px 9px $button-color;
   }
 
   &__wrapper {
@@ -93,6 +92,7 @@
 @media (max-width: 860px) {
   .nav {
     background: rgba(255, 255, 255);
+    box-shadow: -1px -14px 0 #ffffff, 0 0 9px $button-color, -10px 0 0 #ffffff, 10px 0 0 #ffffff;
     &__logo {
       background: url("../../../../assets/images/icons/evoband-logo-black.svg") 50% / cover no-repeat;
       z-index: 10;
@@ -104,7 +104,7 @@
       left: 0;
       right: 0;
       background: rgba(255, 255, 255);
-      padding: 30px;
+      padding: 30px 25px 100px;
       opacity: 0;
       box-shadow: 0 0 3px 0 #cccccc;
       width: 100%;
@@ -130,4 +130,8 @@
       color: #ffffff;
     }
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }

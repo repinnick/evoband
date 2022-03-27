@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShellModule } from '@modules/shell/shell.module';
+import { HeaderModule } from '@core/components/header/header.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ShellModule } from '@modules/shell/shell.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ShellModule
+    ShellModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
