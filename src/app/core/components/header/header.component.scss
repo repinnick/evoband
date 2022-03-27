@@ -9,7 +9,7 @@
 
   &--scroll {
     background: #ffffff;
-    box-shadow: -1px -14px 0 #ffffff, 3px 1px 9px $button-color;
+    box-shadow: $header-shadow
   }
 
   &__wrapper {
@@ -21,7 +21,8 @@
   }
 
   &__logo {
-    background: url("../../../../assets/images/icons/evoband-logo-white.svg") 50% / cover no-repeat;
+    mask: url("../../../../assets/images/icons/evoband-logo-white.svg") 50% / cover no-repeat;
+    background-color: #ffffff;
     width: 115px;
     height: 58px;
     display: block;
@@ -32,7 +33,7 @@
     transition: all 0.3s ease-in-out;
 
     &--scroll {
-      background: url("../../../../assets/images/icons/evoband-logo-black.svg") 50% / cover no-repeat;
+      background-color: #000000;
     }
   }
 
@@ -81,7 +82,7 @@
 }
 
 
-@media (min-width: 860px) and (max-width: 1080px) {
+@media (min-width: $media-860px) and (max-width: 1080px) {
   .nav {
     &__route {
       font-size: 0.7rem;
@@ -89,12 +90,12 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: $media-860px) {
   .nav {
     background: rgba(255, 255, 255);
-    box-shadow: -1px -14px 0 #ffffff, 0 0 9px $button-color, -10px 0 0 #ffffff, 10px 0 0 #ffffff;
+    box-shadow: $header-shadow;
     &__logo {
-      background: url("../../../../assets/images/icons/evoband-logo-black.svg") 50% / cover no-repeat;
+      background-color: #000000;
       z-index: 10;
     }
     &__links {

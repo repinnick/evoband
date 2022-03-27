@@ -1,4 +1,12 @@
 $wrapper-padding-lr: 15px;
 $title-size: 2rem;
-$button-color: #2ca3de;
 $font-family-exo: 'Exo 2', sans-serif;
+
+// COLOR
+$button-color: #2ca3de;
+
+// SHADOW
+$header-shadow: -1px -14px 0 #ffffff, 0 0 9px $button-color, -10px 0 0 #ffffff, 10px 0 0 #ffffff;
+
+// MEDIA
+$media-860px: 860px;
