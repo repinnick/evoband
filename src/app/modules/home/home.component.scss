@@ -1,15 +1,5 @@
 @import "vars";
 
-.background {
-  background: url("../../../assets/images/img/home/header.jpg") 50% / cover no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-
-  @media (max-width: $media-860px) {
-    background-position: 70% 50%;
-  }
-}
-
 .home {
   &__wrapper {
     padding: 100px $wrapper-padding-lr;
